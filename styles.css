@@ -1,0 +1,8 @@
+.galerry-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.galerry-list-img {
+  max-width: 100%;
+}

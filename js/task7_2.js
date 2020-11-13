@@ -17,7 +17,7 @@ const ingredients = [
 
 // =========================МетодРучной============================================================
 
-// // const sprededIngredients = [...ingredients];
+// const sprededIngredients = [...ingredients];
 // const liRef = document.createElement('li');
 // liRef.textContent = ingredients[0];
 
@@ -62,7 +62,7 @@ const ingredients = [
 const createLi = item => {
   const liRef = document.createElement('li');
   liRef.textContent = item;
-  // console.log(liRef);
+
   return liRef;
 };
 
