@@ -29,7 +29,6 @@ const images = [
 ];
 const galleryRef = document.querySelector('#gallery');
 // console.log(galleryRef);
-galleryRef.classList.add('galerry-list');
 
 galleryRef.insertAdjacentHTML(
   'beforeend',
@@ -40,6 +39,7 @@ galleryRef.insertAdjacentHTML(
     )
     .join(''),
 );
+galleryRef.classList.add('galerry-list');
 
 // const createImgRef = item => {
 //   const imgRef
