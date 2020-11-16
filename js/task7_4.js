@@ -30,10 +30,8 @@ const increment = () => {
 };
 
 const decrement = () => {
-  if (counterValue !== 0) {
-    counterValue -= 1;
-    renderValue();
-  }
+  counterValue -= 1;
+  renderValue();
 };
 
 // 4. Повесим слушатели события клик на кнопки с коллбэком
