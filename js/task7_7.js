@@ -11,7 +11,7 @@ console.dir(fontSizeControlRef);
 const spanTextRef = document.querySelector('#text');
 
 // 3. Повесим слушатель на инпут который будет менять HTMLElement.style
-// 4. Через консоль дир нашел свойство valueAsNumber будем использовать его для размера шрифта спана
-fontSizeControlRef.addEventListener('input', () => {
-  spanTextRef.style.fontSize = `${fontSizeControlRef.valueAsNumber}px`;
+// 4. Будем использовать e.target.value для изменеие размера шрифта спана
+fontSizeControlRef.addEventListener('input', e => {
+  spanTextRef.style.fontSize = `${e.target.value}px`;
 });

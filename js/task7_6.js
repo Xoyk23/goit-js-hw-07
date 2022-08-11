@@ -9,14 +9,14 @@
 
 //1. Получаем ссылку на инпут
 const inputRef = document.querySelector('#validation-input');
-// console.log(inputRef);
+
 //2. Создаём переменную для дата атрибута length приведённую к числу (так как по умолчанию это строка), для удобства обращения
 const dataLength = Number(inputRef.dataset.length);
 
 // 3. Вешаем слушатель события на инпут
 // 4. Внутри коллбэк функции Пишем цикл else if  в котором проводим проверки и в заменяем или удаляем классы
 
-inputRef.addEventListener('blur', () => {
+inputRef.addEventListener('blur', e => {
   inputRef.classList.add('invalid');
   if (inputRef.value.length === dataLength) {
     inputRef.classList.replace('invalid', 'valid');
@@ -27,7 +27,3 @@ inputRef.addEventListener('blur', () => {
     inputRef.classList.replace('valid', 'invalid');
   }
 });
-
-// console.log(inputRef.dataset.length);
-// const dataLength = Number(inputRef.dataset.length);
-// console.log(dataLength);

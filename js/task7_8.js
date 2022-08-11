@@ -25,13 +25,10 @@ const createBoxes = amount => {
     item.style.backgroundColor = randRgb();
     item.style.width = `${30 + i * 10}px`;
     item.style.height = `${30 + i * 10}px`;
+    item.style.border = '1px solid';
+    item.style.marginBottom = '2px';
   });
 };
-
-// const destroyBoxes = () => {
-//   const divDestroy = document.querySelectorAll('#boxes div');
-//   divDestroy.forEach(item => item.remove());
-// };
 
 function destroyBoxes() {
   refs.boxes.innerHTML = '';
